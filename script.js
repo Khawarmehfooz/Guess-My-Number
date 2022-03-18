@@ -1,6 +1,6 @@
 'use strict';
 //Creating a Secret Number
-let secretnumber = Math.trunc(Math.random() * 20) + 1;
+let secretnumber = Math.trunc(Math.random() * 20 + 1);
 
 let score = 20;
 let highscore = 0;
@@ -52,7 +52,7 @@ document.querySelector('.check').addEventListener('click', function () {
 });
 document.querySelector('.again').addEventListener('click', function () {
   score = 20;
-  secretnumber = Math.trunc(Math.random() * 20) + 1;
+  secretnumber = Math.trunc(Math.random() * 20 + 1);
   document.querySelector('body').style.backgroundColor = '#222';
   document.querySelector('.score').textContent = score;
   document.querySelector('.message').textContent = 'Start Guessing...';
